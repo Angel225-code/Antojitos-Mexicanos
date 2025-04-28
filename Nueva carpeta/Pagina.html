@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comida Mexicana</title>
+  <link rel="stylesheet" href="estilos.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+     <img src="descarga.jpg" alt="Logo de Comida Mexicana" id="logo">
+    <h1> ¡Pide Comida Mexicana y Recetas!</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección del Menú -->
+    <section id="menu">
+      <h2>Menú para Pedir</h2>
+      <div class="comida">
+        <p>🌮 Tacos al Pastor - <strong>$120</strong></p>
+        <button onclick="agregarAlCarrito('Tacos al Pastor', 120)">Agregar</button>
+      </div>
+      <div class="comida">
+        <p>🍲 Sopa de Tortilla - <strong>$90</strong></p>
+        <button onclick="agregarAlCarrito('Sopa de Tortilla', 90)">Agregar</button>
+      </div>
+      <div class="comida">
+        <p>🌯 Burrito - <strong>$150</strong></p>
+        <button onclick="agregarAlCarrito('Burrito', 150)">Agregar</button>
+      </div>
+      <div class="comida">
+        <p>🍛 Enchiladas Verdes - <strong>$180</strong></p>
+        <button onclick="agregarAlCarrito('Enchiladas Verdes', 180)">Agregar</button>
+      </div>
+    </section>
+
+    <!-- Sección de Recetas -->
+    <section id="recetas">
+      <h2>Recetas Mexicanas</h2>
+      
+      <article>
+        <h3>Tacos al Pastor</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ol>
+          <li>Carne de cerdo</li>
+          <li>Achiote</li>
+          <li>Piña</li>
+          <li>Tortillas de maíz</li>
+          <li>Cilantro fresco</li>
+          <li>Cebolla picada</li>
+          <li>Salsa al gusto</li>
+        </ol>
+        <p><strong>Instrucciones:</strong></p>
+        <ol>
+          <li>Marinar la carne con achiote y otros condimentos durante varias horas.</li>
+          <li>Cocer la carne en un trompo o en una parrilla, añadiendo piña al final.</li>
+          <li>Cortar la carne en tiras finas y servir en tortillas calientes.</li>
+          <li>Agregar cebolla, cilantro y salsa al gusto.</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Sopa de Tortilla</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ol>
+          <li>Tomates</li>
+          <li>Ajo</li>
+          <li>Cebolla</li>
+          <li>Chile pasilla</li>
+          <li>Tortillas</li>
+          <li>Caldo de pollo</li>
+          <li>Un chorrito de aceite</li>
+        </ol>
+        <p><strong>Instrucciones:</strong></p>
+        <ol>
+          <li>Freír las tortillas en aceite caliente hasta que estén crujientes y hacer pedazos pequeños.</li>
+          <li>Cocinar los tomates, ajo, cebolla y chile, luego licuar con el caldo de pollo.</li>
+          <li>Mezclar la salsa licuada con las tortillas fritas y cocinar unos minutos hasta que se suavicen.</li>
+          <li>Servir caliente, con trozos de aguacate y crema.</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Enchiladas Verdes</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ol>
+          <li>Tortillas de maíz</li>
+          <li>Salsa verde (hecha con tomatillos y chiles verdes)</li>
+          <li>Pollo desmenuzado</li>
+          <li>Queso fresco</li>
+          <li>Crema mexicana</li>
+        </ol>
+        <p><strong>Instrucciones:</strong></p>
+        <ol>
+          <li>Rellenar las tortillas con pollo desmenuzado.</li>
+          <li>Cubrir las tortillas con salsa verde y hornear durante unos minutos.</li>
+          <li>Servir con crema y queso fresco por encima.</li>
+        </ol>
+      </article>
+    </section>
+
+<!-- Sección de Contacto -->
+<section id="contacto">
+  <h2>📞 Contacto</h2>
+  <div class="enlaces-contacto">
+    <a href="https://www.whatsapp.com" target="_blank" class="btn whatsapp">WhatsApp</a>
+    <a href="https://www.facebook.com" target="_blank" class="btn facebook">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank" class="btn instagram">Instagram</a>
+  </div>
+</section>
+
+    <!-- Sección del Carrito -->
+    <section id="carrito">
+      <h2>🛒 Tu Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+      <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Comida Mexicana</p>
+  </footer>
+</body>
+</html>

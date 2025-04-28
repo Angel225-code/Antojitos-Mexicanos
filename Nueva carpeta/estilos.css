@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5ce85;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  position: absolute;
+  left: 200px;
+  width: 200px;
+  
+}
+
+header {
+  background-color: #108d16;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 20px;
+  position: sticky; /* Esto hace que el encabezado se quede pegado al hacer scroll */
+  top: 0; /* Establece que el encabezado se quede en la parte superior */
+
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+}
+
+article {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+/* Agregar bordes y estilo a los ingredientes e instrucciones */
+#recetas ol {
+  border: 2px solid #388e3c; /* Bordes alrededor de la lista */
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#recetas p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#recetas article h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+#recetas ol li {
+  font-size: 16px;
+  color: #555;
+}
+
+#recetas article {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones de agregar al carrito */
+button {
+  padding: 10px 20px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+#carrito {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito li {
+  margin-bottom: 10px;
+}
+
+#lista-carrito li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#lista-carrito li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Estilo de la sección de contacto */
+#contacto {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+/* Estilo del encabezado de la sección */
+#contacto h2 {
+  color: #388e3c;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Contenedor de los enlaces */
+.enlaces-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap; /* Permite que los botones se acomoden en varias filas si es necesario */
+}
+
+/* Estilos de los botones de los enlaces */
+.enlaces-contacto a {
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  min-width: 150px; /* Ancho mínimo para que los botones no se vean tan pequeños */
+  text-align: center;
+}
+
+/* Colores específicos para cada red social */
+.whatsapp {
+  background-color: #25d366; /* Color verde característico de WhatsApp */
+}
+
+.facebook {
+  background-color: #1877f2; /* Color azul de Facebook */
+}
+
+.instagram {
+  background-color: #e1306c; /* Color rosa de Instagram */
+}
+
+/* Efectos de hover para los botones */
+.enlaces-contacto a:hover {
+  transform: translateY(-5px); /* Movimiento hacia arriba */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más grande al pasar el mouse */
+}
+
+.enlaces-contacto a:active {
+  transform: translateY(2px); /* Movimiento hacia abajo al hacer clic */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Regreso a la sombra más pequeña al hacer clic */
+}
